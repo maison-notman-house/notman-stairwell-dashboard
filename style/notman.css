@@ -10,5 +10,9 @@ body {
 }
 
 .half-height {
-  min-height: 50vh;
+  min-height: 49vh;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
