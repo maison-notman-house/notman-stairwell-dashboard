@@ -4,12 +4,43 @@
     <title> Notman Stairwell Dashboard </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/notman.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="js/stairwell.js"></script>
   </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
+  <body ng-app="stairwell">
+    <div ng-controller="StairwellCtrl" class="container-fluid">
+
+      <!----- Here ---------------------------------------------------------->
+      <div class="row" ng-show="display === 'here'">
         <div class="col-md-6">
           <img src="images/arrow-down.gif" class="img-responsive">
+        </div>
+        <div class="col-md-6">
+          <div class="half-height">
+            <img src="images/mansion.jpg" class="img-responsive">
+            <p class="text-center"> Real Ventures </p>
+          </div>
+          <div class="half-height">
+            <img src="images/01.jpg" class="img-responsive">
+            <p class="text-center"> &larr; 107-112 </p>
+            <p class="text-center"> 101-106 &rarr; </p>
+          </div>
+        </div>
+      </div>
+
+      <!----- Upstairs ------------------------------------------------------>
+      <div class="row" ng-show="display === 'upstairs'">
+        <div class="col-md-6">
+          <div class="half-height">
+            <img src="images/03.jpg" class="img-responsive">
+            <p class="text-center"> &Eacute;v&eacute;nements / Events </p>
+          </div>
+          <div class="half-height">
+            <img src="images/02.jpg" class="img-responsive">
+            <p class="text-center"> Cuisine / Kitchen </p>
+            <p class="text-center"> 201-213 </p>
+          </div>
         </div>
         <div class="col-md-6">
           <img src="images/arrow-up.gif" class="img-responsive">
