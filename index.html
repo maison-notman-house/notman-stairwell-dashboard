@@ -9,10 +9,10 @@
     <script type="text/javascript" src="js/stairwell.js"></script>
   </head>
   <body ng-app="stairwell">
-    <div id="address">0.0.0.0</div>
+    <div id="address"></div>
     <div ng-controller="StairwellCtrl" class="no-scroll">
 
-      <!- - - Here - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+      <!-- - - Here - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
       <div class="row" ng-show="display === 'here'">
         <div class="col-md-6">
           <img src="images/arrow-down.gif" class="img-responsive">
@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <!- - - Upstairs - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+      <!-- - - Upstairs - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
       <div class="row" ng-show="display === 'upstairs'">
         <div class="col-md-6">
           <div class="half-height">
