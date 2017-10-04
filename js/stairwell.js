@@ -1,6 +1,22 @@
 DISPLAY_STATES = [ 'here', 'upstairs' ];
 DISPLAY_CYCLE_MILLISECONDS = 4000;
 
+/* displays the IP address. makes it easier when we need to remote connect */
+function displayAddress() {
+    var searchParams = new URLSearchParams(location.search);
+    var address = searchParams.get('address');
+    if (address && address.length > 0 ) {
+        var elem = document.getElementById('address');
+        if (elem) {
+            elem.innerHTML = address;
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    displayAddress();
+});
+
 angular.module('stairwell', [])
 
   // Stairwell controller

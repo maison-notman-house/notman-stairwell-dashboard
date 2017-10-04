@@ -17,3 +17,12 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+
+#address {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 200;
+  color: #5a3c58;
+  font-size: 20px;
+}
