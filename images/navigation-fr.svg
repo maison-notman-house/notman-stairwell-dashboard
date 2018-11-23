@@ -3,7 +3,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 1919.999 1080" width="1919.999" height="1080">
   <defs>
     <style type="text/css">
-         @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i');
+         @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
     </style>      
     <font-face font-family="Roboto Condensed" font-size="55" panose-1="2 0 0 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-73.24219" underline-thickness="48.828125" slope="0" x-height="528.3203" cap-height="710.9375" ascent="1047.8516" descent="-270.9961" font-weight="700">
       <font-face-src>
