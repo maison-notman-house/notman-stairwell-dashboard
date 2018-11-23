@@ -2,6 +2,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 1919.999 1080" width="1919.999" height="1080">
   <defs>
+    <style type="text/css">
+         @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i');
+    </style>  
     <font-face font-family="Roboto Condensed" font-size="55" panose-1="2 0 0 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-73.24219" underline-thickness="48.828125" slope="0" x-height="528.3203" cap-height="710.9375" ascent="1047.8516" descent="-270.9961" font-weight="700">
       <font-face-src>
         <font-face-name name="RobotoCondensed-Bold"/>
@@ -18,9 +21,10 @@
   </metadata>
   <g id="Canvas_1" stroke="none" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none">
     <title>Canvas 1</title>
-    <rect fill="white" x="0" y="0" width="1919.999" height="1080"/>
+    <rect fill="none" x="0" y="0" width="1919.999" height="1080"/>
     <g id="Canvas_1: Layer 1">
       <title>Layer 1</title>
+      <!--
       <g id="Graphic_45">
         <rect x="210" y="-27.6447" width="1500" height="471" id="path"/>
         <clipPath id="clip_path">
@@ -30,6 +34,7 @@
           <image xl:href="logo.png" width="1500" height="471" transform="translate(210 -27.6447)"/>
         </g>
       </g>
+      -->
       <g id="Graphic_4">
         <rect x="58.66467" y="448.5144" width="398.45873" height="81" fill="#aa3c59"/>
       </g>

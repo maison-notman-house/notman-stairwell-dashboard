@@ -25,14 +25,28 @@
        right: 0;
        bottom: 970px;
      }
+     
      logo img {
         margin: 0 auto;
         display: block;
      }
+     
+     .navigation {
+       transition: opacity 0.5s ease-in-out;
+       opacity: 0;
+       position: absolute;
+       top: 0;
+       left: 0;
+     }
+     
+     .navigation.visible {
+        opacity: 1 !important;
+     }     
+          
   </style>
   
   <script language="javascript">
-     var interval = 3000;
+     var interval = 4200;
      var languages = ['en', 'fr'];
      var langIdx = 0
      document.addEventListener('DOMContentLoaded', function(event) { 
@@ -41,8 +55,14 @@
            if (langIdx >= languages.length) {
              langIdx = 0;
            }
-           var element = document.querySelector('#navigation');
-           element.innerHTML = '<img src="./images/navigation-' + languages[langIdx] + '.svg"/>';
+           
+           var elements = document.querySelectorAll('.navigation');
+           for (var i=0; i<elements.length; i++) {
+              elements[i].classList.remove('visible');
+           }
+
+           var element = document.querySelector('#navigation-' + languages[langIdx]);
+           element.classList.add('visible');
         }, interval);
 
      });
@@ -53,7 +73,8 @@
 <main>
 <logo><img src="./images/logo.png" /></logo>
 
-<div id="navigation"><img src="./images/navigation-en.svg" /></div>
+<div id="navigation-fr" class="navigation"><object data="./images/navigation-fr.svg" type="image/svg+xml"></object></div>
+<div id="navigation-en" class="navigation"><object data="./images/navigation-en.svg" type="image/svg+xml"></object></div>
 </main>
 </body>
 </html>
